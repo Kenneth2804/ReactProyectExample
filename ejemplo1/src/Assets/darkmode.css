@@ -1,0 +1,22 @@
+#darkmode{
+
+    background-image: transparent url("../Assets/pics/night-mode.png") no-repeat center;
+    background-size: 30px 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+}
+
+#darkmode:hover,
+#darkomode:foucus{
+    filter: none;
+    cursor: pointer;
+}
+#darkmode.clicked{
+    filter: none !important;
+    background: transparent url("../Assets/pics/sol.png") no-repeat center;
+}
